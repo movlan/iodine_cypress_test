@@ -1,0 +1,20 @@
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "hello@cypress.io",
+  "phone": "555-555-5555",
+  "streetAddress": "123 Main St",
+  "city": "New York",
+  "state": "NY",
+  "zip": "12345",
+  "dateAvailable": "05/10/2021",
+  "desiredPay": "$100000",
+  "websiteUrl": "https://bahram.dev",
+  "linkedinUrl": "https://www.linkedin.com/in/bahram-movlanov/",
+  "educationLevel": "College - Associates",
+  "referredBy": "none",
+  "authorization": "Yes",
+  "sponsorship": "No",
+  "gpa": "3.8",
+  "howHeard": "LinkedIn"
+}
