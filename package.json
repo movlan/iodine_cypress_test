@@ -4,7 +4,8 @@
   "description": "IodineSoftware Career Application Test",
   "main": "none",
   "scripts": {
-    "test": "cypress run --spec \"cypress/integration/main.spec.js\""
+    "test:cli": "cypress run --spec \"cypress/integration/main.spec.js\"",
+    "test:gui": "npx cypress open"
   },
   "repository": {
     "type": "git",
