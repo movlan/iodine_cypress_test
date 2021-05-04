@@ -71,6 +71,22 @@ describe("Test Iodine Software Carrier Application Page", () => {
       cy.get('[data-menu-id="fab-menu1"]').click();
       cy.contains(info.state).click();
       cy.get("#zip").type(info.zip);
+
+      // tried to attach file using cypress-file-upload
+      // could not figure out what am I doing wrong here
+      // it seems that cypress cant do anything to hidden elements????
+      cy.fixture("Resume.pdf").then((resume) => {
+        console.log(resume);
+        cy.get('input[type="file"]').attachFile(
+          {
+            resume,
+            fileName: "Resume.pdf",
+            mimeType: "application/pdf",
+          },
+          { subjectType: "input" }
+        );
+      });
+      cy.pause();
       cy.get("#dateAvailable").type(info.dateAvailable);
       cy.get("#desiredPay").type(info.desiredPay);
       cy.get("#websiteUrl").type(info.websiteUrl);
